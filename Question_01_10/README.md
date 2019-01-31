@@ -18,7 +18,7 @@ red = img[:, :, 2].copy()
 |:---:|:---:|
 |![](imori.jpg)|![](answer_1.jpg)|
 
-答え >> answer_1.py
+答え >> [answer_1.py](https://github.com/yoyoyo-yo/Gasyori100knock/blob/master/Question_01_10/answer_1.py)
 
 ## Q.2. グレースケール化
 
@@ -31,7 +31,7 @@ Y = 0.2126 R + 0.7152 G + 0.0722 B
 |:---:|:---:|
 |![](imori.jpg)|![](answer_2.jpg)|
 
-答え >> answer_2.py
+答え >> [answer_2.py](https://github.com/yoyoyo-yo/Gasyori100knock/blob/master/Question_01_10/answer_2.py)
 
 ## Q.3. 二値化
 
@@ -48,7 +48,7 @@ y = { 0 (if y < 128)
 |:---:|:---:|
 |![](imori.jpg)|![](answer_3.jpg)|
 
-答え >> answer_3.py
+答え >> [answer_3.py](https://github.com/yoyoyo-yo/Gasyori100knock/blob/master/Question_01_10/answer_3.py)
 
 ## Q.4. 大津の二値化
 
@@ -83,7 +83,7 @@ argmax_{t} X = argmax_{t} Sb^2
 |:---:|:---:|
 |![](imori.jpg)|![](answer_4.jpg)|
 
-答え >> answer_4.py
+答え >> [answer_4.py](https://github.com/yoyoyo-yo/Gasyori100knock/blob/master/Question_01_10/answer_4.py)
 
 
 ## Q.5. HSV変換
@@ -92,7 +92,13 @@ HSV変換を実装して、色相Hを反転せよ。
 
 HSV変換とは、**Hue(色相)**、**Saturation(彩度)**、**Value(明度)** で色を表現する手法である。
 
-- Hue ... 色合いを0~360度で表現し、赤や青など色の種類を示す。 ( 0 <= H < 360)
+- Hue ... 色合いを0~360度で表現し、赤や青など色の種類を示す。 ( 0 <= H < 360) 色相は次の色に対応する。
+
+```bash
+赤 黄色  緑  水色  青  紫   赤
+0  60  120  180 240 300 360
+```
+
 - Saturation ... 色の鮮やかさ。Saturationが低いと灰色さが顕著になり、くすんだ色となる。 ( 0<= S < 1)
 - Value ... 色の明るさ。Valueが高いほど白に近く、Valueが低いほど黒に近くなる。 ( 0 <= V < 1)
 
@@ -119,7 +125,7 @@ HSV -> RGB変換は以下の式で定義される。
 ```bash
 C = S
 
-H' = H // 60
+H' = H / 60
 
 X = C (1 - |H' mod 2 - 1|)
 
@@ -137,7 +143,7 @@ X = C (1 - |H' mod 2 - 1|)
 |:---:|:---:|
 |![](imori.jpg)|![](answer_5.jpg)|
 
-答え >> answer_5.py
+答え >> [answer_5.py](https://github.com/yoyoyo-yo/Gasyori100knock/blob/master/Question_01_10/answer_5.py)
 
 ## Q.6. 減色処理
 
@@ -155,7 +161,7 @@ val = {  32  (0 <= val < 63)
 |:---:|:---:|
 |![](imori.jpg)|![](answer_6.jpg)|
 
-答え >> answer_6.py
+答え >> [answer_6.py](https://github.com/yoyoyo-yo/Gasyori100knock/blob/master/Question_01_10/answer_6.py)
 
 ## Q.7. 平均プーリング
 
@@ -175,7 +181,7 @@ v = 1/|R| * Sum_{i in R} v_i
 |:---:|:---:|
 |![](imori.jpg)|![](answer_7.jpg)|
 
-答え >> answer_7.py
+答え >> [answer_7.py](https://github.com/yoyoyo-yo/Gasyori100knock/blob/master/Question_01_10/answer_7.py)
 ## Q.8. Maxプーリング
 
 ここでは平均値でなく最大値でプーリングせよ。
@@ -184,7 +190,7 @@ v = 1/|R| * Sum_{i in R} v_i
 |:---:|:---:|
 |![](imori.jpg)|![](answer_8.jpg)|
 
-答え >> answer_8.py
+答え >> [answer_8.py](https://github.com/yoyoyo-yo/Gasyori100knock/blob/master/Question_01_10/answer_8.py)
 
 ## Q.9. ガウシアンフィルタ
 
@@ -212,7 +218,7 @@ K =  1/16 [ 2 4 2 ]
 |:---:|:---:|
 |![](imori_noise.jpg)|![](answer_9.jpg)|
 
-答え >> answer_9.py
+答え >> [answer_9.py](https://github.com/yoyoyo-yo/Gasyori100knock/blob/master/Question_01_10/answer_9.py)
 
 ## Q.10 メディアンフィルタ
 
@@ -227,4 +233,4 @@ K =  1/16 [ 2 4 2 ]
 |:---:|:---:|
 |![](imori_noise.jpg)|![](answer_10.jpg)|
 
-答え >> answer_10.py
+答え >> [answer_10.py](https://github.com/yoyoyo-yo/Gasyori100knock/blob/master/Question_01_10/answer_10.py)
